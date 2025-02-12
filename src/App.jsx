@@ -1,5 +1,11 @@
+import Card from "./Card";
+
 function App() {
-  return <h1>Hello React</h1>;
+  return (
+    <main>
+      <Card />
+    </main>
+  );
 }
 
 export default App;
