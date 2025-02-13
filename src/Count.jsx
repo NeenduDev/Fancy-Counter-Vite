@@ -1,3 +1,3 @@
-export default function Count({ count }) {
-  return <p className="count">{count}</p>;
+export default function Count({ count, isLocked }) {
+  return <p className="count">{isLocked ? 5 : count}</p>;
 }

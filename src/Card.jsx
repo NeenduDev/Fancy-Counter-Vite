@@ -7,9 +7,10 @@ import CountButton from "./CountButton";
 
 export default function Card() {
   const [count, setCount] = useState(0);
-
+  const isLocked = count > 5;
   function handleIncrease() {
-    setCount((c) => c + 1);
+    // if (count === 5) return;
+    setCount((c) => (c > 5 ? 6 : c + 1));
   }
   function handleDecrease() {
     if (count === 0) return;
@@ -21,9 +22,9 @@ export default function Card() {
   }
 
   return (
-    <div className="card">
-      <Title />
-      <Count count={count} />
+    <div className={count > 5 ? `card card--limit` : `card`}>
+      <Title isLocked={isLocked} />
+      <Count count={count} isLocked={isLocked} />
       <ResetButton onReset={handleReset} />
       <ButtonContainer>
         <CountButton type="minus" onDecrease={handleDecrease} />
