@@ -12,12 +12,14 @@ export default function Card() {
     setCount((c) => c + 1);
   }
   function handleDecrease() {
+    if (count === 0) return;
     setCount((c) => c - 1);
   }
 
   function handleReset() {
     setCount(0);
   }
+
   return (
     <div className="card">
       <Title />
