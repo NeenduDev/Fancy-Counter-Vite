@@ -85,6 +85,6 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE.txt
 
 ## Demo
 
-You can see the live demo of this project here: [Demo Link](#)
+You can see the live demo of this project here: [Demo Link](https://neendudev.github.io/Fancy-Counter-Vite/)
 
 ---
